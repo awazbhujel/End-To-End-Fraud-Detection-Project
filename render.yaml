@@ -1,0 +1,16 @@
+# Render Blueprint (optional). Dashboard: New + -> Blueprint -> select this repo.
+# The same settings can be entered manually - see README "Deploy the backend on Render".
+services:
+  - type: web
+    name: fraud-detection-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      # Pin Python: Render's default for new services is newer than the versions these
+      # dependencies were verified on. Must be a fully qualified version.
+      - key: PYTHON_VERSION
+        value: 3.12.8

@@ -1,0 +1,3 @@
+# Frontend (Streamlit UI). Versions verified on Python 3.12.
+streamlit==1.66.1
+requests==2.34.2

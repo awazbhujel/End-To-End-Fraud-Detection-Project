@@ -1,0 +1,7 @@
+# NOTE: Streamlit Community Cloud only reads this file from the REPOSITORY ROOT, even when the
+# app lives in a sub-folder (frontend/). That is why it is not inside frontend/.
+[theme]
+primaryColor = "#c0392b"
+
+[browser]
+gatherUsageStats = false

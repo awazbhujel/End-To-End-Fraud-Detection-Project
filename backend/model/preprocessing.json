@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "features": [
+    "step",
+    "amount",
+    "log_amount",
+    "is_high_amount",
+    "hour",
+    "is_night",
+    "balance_diff_orig",
+    "balance_diff_dest",
+    "type_enc"
+  ],
+  "scaler_center": [
+    239.0,
+    74841.03,
+    11.223134904552275,
+    0.0,
+    16.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "scaler_scale": [
+    180.0,
+    195292.39,
+    2.746166199976553,
+    1.0,
+    7.0,
+    1.0,
+    10151.0,
+    149150.92499999996,
+    2.0
+  ],
+  "amount_p99": 1615979.4715999917,
+  "type_classes": [
+    "CASH_IN",
+    "CASH_OUT",
+    "DEBIT",
+    "PAYMENT",
+    "TRANSFER"
+  ],
+  "meta": {
+    "source_rows": 6362620,
+    "step_min": 1,
+    "step_max": 743,
+    "sklearn_version": "1.9.1",
+    "verified_against_notebook": true
+  }
+}

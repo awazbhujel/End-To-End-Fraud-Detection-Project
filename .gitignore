@@ -1,0 +1,47 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+
+# ---- Secrets / local configuration ----
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+**/.streamlit/secrets.toml
+secrets.toml
+**/secrets.toml
+credentials.json
+**/credentials.json
+service-account*.json
+**/service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+.vercel/
+
+# ---- IDE / OS ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---- Local datasets & generated files (Fraud.csv is ~470 MB: never commit it) ----
+data.csv
+Fraud.csv
+*.csv
+data/
+*.log
+tmp/
+
+# ---- Deliberately NOT ignored (required for deployment) ----
+#   backend/model/best_fraud_model_tuned.pkl
+#   backend/model/preprocessing.json
